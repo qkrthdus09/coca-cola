@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+
+#header{
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    background:rgba(255,255,255,0.2);
+    z-index: 1;
+    
+}
+#header h1{
+    float: left;
+    width: 200px;
+    height: 73px;
+    line-height: 73px;
+    margin-left: 80px;
+}
+#header h1 a{
+    display: block;
+}
+#header h1 img{
+    width: 100%;
+}
+
+/*gnb*/
+
+.gnb{
+    float: right;
+    font-size: 20px;
+    margin-right: 80px;
+    line-height: 73px;
+    
+}
+.gnb li{
+    float: left;
+    position: relative;
+    
+}
+.gnb>li{
+    padding: 0  50px;
+}
+
+.gnb>li::after{
+    content: "";
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    background: #9B0018;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    transform: scale(0,1);
+    transition: transform 1s;
+}
+.gnb>li:hover::after{
+    transform: scale(1);
+}
+
+
+.gnb li a{
+    display: block;
+    color: #fff; /*여기에 색이 먹는이유는 원래 a태그는 색깔태그이고
+    본 색은 파란색이기때문에
+    a태그에 색을 넣는다*/
+    
+}
+/*lnb*/
+.lnb{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 105px;
+    background: #fff;
+    z-index: 1;
+    transition: max-height 0.3s;
+}
+.gnb li:hover .lnb{
+    max-height: 1000px;
+}
+.lnb li{
+    width: 100%;
+    padding: 1px;
+    color: #9B0018;
+}
+.lnb li a{
+    color: #9B0018;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.lnb li:hover{
+    background: #9B0018;
+    
+}
+.lnb li a:hover{
+    color: #fff;
+    font-weight: 600;
+    
+    
+}
+
+/*footer*/
+
+.footer{}
+.fTop{
+    width: 100%;
+    background: url(../images/main/footer_img.png) no-repeat center center;
+    background-size: cover;
+    
+}
+.fTop dl{
+    padding: 80px 50px;
+    float: left;
+}
+.fTop dl:first-child{
+    padding-left: 0
+}
+.fTop dt{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.fTop dt::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #8c8c8c;
+    margin: 10px 0;
+}
+
+.fTop dd{
+    line-height: 30px;
+    font-weight: 300;
+}
+.fTop dd a{
+    color: #fff;
+}
+
+.fBtm{
+    background: #eb2d2f;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.fBtm .inner{position: relative;}
+.fSns{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.fSns li{
+    float: left;
+    margin-right: 30px;
+}
+.fSns li:last-child{margin-right: 0;}
+.fSns li a{display: block;}
+.fSns li img{}
+
+
+.fLogo{
+    margin-bottom: 30px;
+}
+.fLogo img{
+    width: 194px;
+    margin-top: 100px;
+}
+
+.fInfo{
+    
+}
+.fInfo li{
+    float: left;
+    
+}
+.fInfo li::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ff9e9e;
+    margin: 0 15px;
+}
+.fInfo li:last-child::after{
+    display: none;
+}
+.fInfo li a{
+    color: #fff;
+}
+
+.copy{
+    color: #ff9e9e;
+    padding-top: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+

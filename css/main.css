@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/*mainSlider*/
+.mainSlider{
+    background: #EB2D2F;
+    position: relative; /*위에 헤더가 앱솔루트떠있으니까 뒤로 숨어버려서 제트인덱스를 헤더에 줘야 다시 올라온다*/
+}
+
+.cocaBig{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px; /*전체의 반만큼이 아니라 콜라의 반만큼빼야한다*/
+    bottom: -150px;
+    
+    
+}
+.cocaBig img{
+    width: 600px;
+}
+
+.mainSliderBG{
+    padding: 0 30px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    text-align: center; /*이미지니까 텍스트얼라인센터가 먹음*/
+    
+}
+.mainSliderBG img{
+    margin-right: 10px; 
+    width: 2%;
+}
+
+
+/*mainCon01*/
+.mainCon01{
+    padding-top: 300px;
+}
+.mainCon01 .inner{
+    position: relative;
+}
+
+.coke{
+    text-align: center;
+}
+.coke img{
+    margin-bottom: 120px;
+    
+}
+
+.mainCon01 h5{font-size: 25px;
+}
+.mainCon01 h2 span{
+    display: block;
+    color: #EB2D2F;
+}
+.mainCon01 h2{
+    margin-bottom: 90px;
+    font-size: 41px;
+}
+.mainCon01 p{
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 35px;
+}
+.mainCon01 span{
+    display: block;
+}
+
+.con01Img{
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+.con01Img img{
+    width: 345px;
+}
+
+
+/*mainCon02*/
+.mainCon02{
+    text-align: center;
+    position: relative;
+    margin: 130px 0;
+
+}
+.mainCon02BK{
+    height: 1005px;
+    background: url(../images/main/mainCon02BG.png) no-repeat center center;
+    
+}
+.con02List{
+    position: absolute;
+    top: 0;
+}
+.con02List li{
+    float: left;
+    width: 400px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.con02List li a{display: block;}
+
+
+.con02List li img{
+    position: relative;
+}
+.con02List li p{
+    display: none;
+}
+
+
+.con02List li:hover p{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 120px;
+}
+
+.con02List li:hover span{
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.on{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.con02List li:hover .on{
+    display: block;
+    width: 525px;
+    
+}
+
+.listEx{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 50%;
+    margin-left: -262px;
+    top: 50%;
+    margin-top: -250px;
+}
+.listEx img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*mainCon03*/
+
+.mainCon03{
+    margin-top: 250px;
+}
+.mainCon03 h5{
+    text-align: center;
+    font-size: 25px;
+}
+.mainCon03 h2{
+    text-align: center;
+    font-size: 41px;
+    margin-bottom: 90px;
+}
+.mainCon03 h2 span{
+    color: #EB2D2F;
+    
+}
+
+
+.con03List{text-align: center;}
+.con03List li{
+    display: inline-block;
+    
+}
+.con03List li:last-child{margin-right: 0px;}
+
+.con03List li img{
+    height: 500px;
+    
+    
+
+}
+
+.con03Tit{margin: 0 auto;}
+.con03Tit li{
+    float: left;
+    margin-right: 50px;
+}
+.con03Tit li:last-child{margin-right: 0;}
+
+
+.con03Tit li span{
+    display: block;
+    font-size: 18px;
+}
+.con03Tit li .boldP{
+    font-size: 24px;
+    display: block;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    height: 70px;
+    line-height: 40px;
+}
+
+
+
+
+
+/*mainCon05*/
+
+.mainCon05{
+    height: 1783px;
+    background: url(../images/common/mainCon05BG.png) repeat-x center top;
+}
+
+.con05Tit{
+    float: right;
+    text-align: right;
+    margin-top: 250px;
+    margin-bottom: 80px;
+}
+.con05Tit h5{
+    font-size: 25px;
+}
+.con05Tit h2{
+    font-size: 41px;
+}
+.con05Tit h2 span{
+    display: block;
+    color: #EB2D2F;
+}
+
+.con05List{
+    float: left;
+    
+}
+.con05List li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 592px;
+    height: 394px;
+    overflow: hidden;
+    
+    
+}
+
+
+
+
+.con05List li:nth-child(2){margin-right: 0;}
+.con05List li:nth-child(4){margin-right: 0;}
+.con05List li a{
+    display: block;
+}
+.con05List li img{
+    width: 100%;
+    transition: width 2s;
+}
+.con05List li img:hover{
+    width: 110%;
+}
+
+
+.con05Txt{
+    float: right;
+    text-align: right;
+}
+.con05Txt li{
+    float: left;
+    margin-right: 180px;
+}
+
+.con05Txt li:last-child{margin-right: 0;}
+
+
+
+.con05Txt li p{
+    color: #fff;
+}
+.con05Txt li span{
+    display: block;
+}
+
+
+/*mainCon06*/
+
+.mainCon06{
+    width: 100%;
+    height: 1568px;
+    background: url(../images/main/mainCon05_BK.png) no-repeat center center;
+}
+.con06Tit{
+    font-weight: 300;
+    font-size: 54px;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+.con06Tit p{
+    
+}
+.con06Tit span{
+    display: inline-block;
+}
+.con06Red{
+    color: #eb2d2f;
+}
+.con06Bold{
+    font-weight: 400;
+}
+
+.con06List{
+}
+.con06List li{
+    width: 392px;
+    height: 485px;
+    float: left;
+    margin-right: 12px;
+    position: relative;
+    
+    
+        
+}
+.con06List li::after{
+    content: "";
+    display: inline-block;
+    width: 392px;
+    height: 100px;
+    background: #fff;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.con06List li div{
+    overflow: hidden;
+    height: 485px;
+}
+
+.con06List li img{
+    width: 100%;
+    transition: width 2s;
+    position: relative;
+}
+.con06List li img:hover{
+    width: 120%;
+    
+}
+.con06List li a{
+    display: block;
+    height: 100%;
+}
+
+
+
+.con06List li:last-child{margin-right: 0;}
+
+.con06List li a{
+    display: block;
+}
+.con06List li img{
+    
+}
+.con06List li p{
+    text-align: right;
+    padding-right: -30px;
+    margin-top: -80px;
+    background: #fff;
+    height: 50px;
+    position: absolute;
+    width: 390px;
+    bottom: -70px;
+    border: 1px solid #ddd;
+    padding-top: 20px;
+}
+.con06List li p .thin{
+    padding-right: 30px;
+    
+}
+
+.con06List li p .bold{
+    font-weight: bold;
+    display: inline-block;
+}
+.con06List li:hover p{
+    color: #9B0018;
+}
+
+.cocaPang{
+    width: 100%;
+    text-align: center;
+    margin-top: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

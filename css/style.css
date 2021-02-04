@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+
+/*mainCon04*/
+.ul{}
+.mainCon04{
+    text-align: center;
+    margin-top: 250px;
+    padding: 150px 0;
+    padding-bottom: 200px;
+    background: #F3F3F3;
+    position: relative;
+}
+.mainCon04 h5{
+    font-size: 25px;
+}
+.mainCon04 h2{
+    font-size: 41px;
+}
+.mainCon04 h2 span{
+    color: #EB2D2F;
+}
+
+.instaBK{
+    
+}
+
+.con04List{
+    height: 800px;
+    background: url(../images/main/mainCon03_InstaBK.png) no-repeat center center;
+    margin: 0 auto;
+    margin-top: 50px;
+    outline: none;
+    padding-top: 140px;
+}
+.con04List .slick-slide{
+    width:400px;
+}
+
+.con04List li img{
+    outline: none;
+    display:inline-block;
+}
+.con04List li a{
+    outline: none;
+    display: block;
+}
+
+
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.slick-dots li{
+    display: inline-block;
+}
+.slick-dots li button{
+    border: 0;
+    background: #fff;
+    width: 30px;
+    height: 3px;
+    /*border: 1px solid #000;*/
+    margin: 0 5px;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+}
+.slick-dots li button:last-child{}
+
+.slick-dots .slick-active button{ 
+    background: #EB2D2F;
+}
+
+
+
+.slick-arrow{display: none;}
